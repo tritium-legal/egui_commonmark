@@ -485,7 +485,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "adf31f99fad93fe83c1055b92b5c1b135f1ecfa464789817c372000e768d4bd1"
 dependencies = [
  "bytemuck",
- "emath",
+ "emath 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "ecolor"
+version = "0.33.0"
+source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+dependencies = [
+ "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
 ]
 
 [[package]]
@@ -497,7 +505,7 @@ dependencies = [
  "ahash",
  "bytemuck",
  "document-features",
- "egui",
+ "egui 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "egui-wgpu",
  "egui-winit",
  "egui_glow",
@@ -531,8 +539,24 @@ checksum = "ab9b5d3376c79439f53a78bf7da1e3c0b862ffa3e29f46ab0f3e107430f2e576"
 dependencies = [
  "ahash",
  "bitflags 2.9.4",
- "emath",
- "epaint",
+ "emath 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "epaint 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log",
+ "nohash-hasher",
+ "profiling",
+ "smallvec",
+ "unicode-segmentation",
+]
+
+[[package]]
+name = "egui"
+version = "0.33.0"
+source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+dependencies = [
+ "ahash",
+ "bitflags 2.9.4",
+ "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "epaint 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
  "log",
  "nohash-hasher",
  "profiling",
@@ -549,8 +573,8 @@ dependencies = [
  "ahash",
  "bytemuck",
  "document-features",
- "egui",
- "epaint",
+ "egui 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "epaint 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "log",
  "profiling",
  "thiserror 2.0.17",
@@ -568,7 +592,7 @@ checksum = "bb4ea8cb063c00d8f23ce11279c01eb63a195a72be0e21d429148246dab7983e"
 dependencies = [
  "arboard",
  "bytemuck",
- "egui",
+ "egui 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "log",
  "objc2 0.5.2",
  "objc2-foundation 0.2.2",
@@ -583,11 +607,11 @@ dependencies = [
 
 [[package]]
 name = "egui_commonmark"
-version = "0.21.1"
+version = "0.22.0"
 dependencies = [
  "document-features",
  "eframe",
- "egui",
+ "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
  "egui_commonmark_backend",
  "egui_commonmark_macros",
  "egui_extras",
@@ -597,10 +621,10 @@ dependencies = [
 
 [[package]]
 name = "egui_commonmark_backend"
-version = "0.21.0"
+version = "0.22.0"
 dependencies = [
  "data-url",
- "egui",
+ "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
  "egui_extras",
  "pulldown-cmark",
  "syntect",
@@ -608,10 +632,10 @@ dependencies = [
 
 [[package]]
 name = "egui_commonmark_macros"
-version = "0.21.1"
+version = "0.22.0"
 dependencies = [
  "document-features",
- "egui",
+ "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
  "egui_commonmark_backend",
  "proc-macro-crate",
  "proc-macro2",
@@ -624,11 +648,10 @@ dependencies = [
 [[package]]
 name = "egui_extras"
 version = "0.33.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bdced1964ad8a02a116b1307f7b4f73dbe408c5f53dcdd488f527609f261da60"
+source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
 dependencies = [
  "ahash",
- "egui",
+ "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
  "ehttp",
  "enum-map",
  "image",
@@ -645,7 +668,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "668c0d4f726cc33838f0915f6b8c00af0ca0910e975ab58cf34b3e39c614552c"
 dependencies = [
  "bytemuck",
- "egui",
+ "egui 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "glow",
  "log",
  "memoffset",
@@ -679,6 +702,11 @@ dependencies = [
 ]
 
 [[package]]
+name = "emath"
+version = "0.33.0"
+source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+
+[[package]]
 name = "enum-map"
 version = "2.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -707,13 +735,29 @@ dependencies = [
  "ab_glyph",
  "ahash",
  "bytemuck",
- "ecolor",
- "emath",
+ "ecolor 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "emath 0.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "epaint_default_fonts",
  "log",
  "nohash-hasher",
  "parking_lot",
  "profiling",
+]
+
+[[package]]
+name = "epaint"
+version = "0.33.0"
+source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+dependencies = [
+ "ab_glyph",
+ "ahash",
+ "ecolor 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "log",
+ "nohash-hasher",
+ "parking_lot",
+ "profiling",
+ "ttf-parser",
 ]
 
 [[package]]
