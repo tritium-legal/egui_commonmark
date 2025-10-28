@@ -491,9 +491,9 @@ dependencies = [
 [[package]]
 name = "ecolor"
 version = "0.33.0"
-source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+source = "git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands#2a0a37352f3fa0c15c41b9f92bfa4feb3e0b3913"
 dependencies = [
- "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
 ]
 
 [[package]]
@@ -551,12 +551,12 @@ dependencies = [
 [[package]]
 name = "egui"
 version = "0.33.0"
-source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+source = "git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands#2a0a37352f3fa0c15c41b9f92bfa4feb3e0b3913"
 dependencies = [
  "ahash",
  "bitflags 2.9.4",
- "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
- "epaint 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
+ "epaint 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
  "log",
  "nohash-hasher",
  "profiling",
@@ -611,7 +611,7 @@ version = "0.22.0"
 dependencies = [
  "document-features",
  "eframe",
- "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
  "egui_commonmark_backend",
  "egui_commonmark_macros",
  "egui_extras",
@@ -624,7 +624,7 @@ name = "egui_commonmark_backend"
 version = "0.22.0"
 dependencies = [
  "data-url",
- "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
  "egui_extras",
  "pulldown-cmark",
  "syntect",
@@ -635,7 +635,7 @@ name = "egui_commonmark_macros"
 version = "0.22.0"
 dependencies = [
  "document-features",
- "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
  "egui_commonmark_backend",
  "proc-macro-crate",
  "proc-macro2",
@@ -648,10 +648,10 @@ dependencies = [
 [[package]]
 name = "egui_extras"
 version = "0.33.0"
-source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+source = "git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands#2a0a37352f3fa0c15c41b9f92bfa4feb3e0b3913"
 dependencies = [
  "ahash",
- "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "egui 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
  "ehttp",
  "enum-map",
  "image",
@@ -704,7 +704,7 @@ dependencies = [
 [[package]]
 name = "emath"
 version = "0.33.0"
-source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+source = "git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands#2a0a37352f3fa0c15c41b9f92bfa4feb3e0b3913"
 
 [[package]]
 name = "enum-map"
@@ -747,17 +747,16 @@ dependencies = [
 [[package]]
 name = "epaint"
 version = "0.33.0"
-source = "git+https://github.com/tritium-legal/egui.git?branch=tritium-fork#a6896312291003675035980b769988cc672d410b"
+source = "git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands#2a0a37352f3fa0c15c41b9f92bfa4feb3e0b3913"
 dependencies = [
  "ab_glyph",
  "ahash",
- "ecolor 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
- "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=tritium-fork)",
+ "ecolor 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
+ "emath 0.33.0 (git+https://github.com/tritium-legal/egui.git?branch=ignore-special-paste-commands)",
  "log",
  "nohash-hasher",
  "parking_lot",
  "profiling",
- "ttf-parser",
 ]
 
 [[package]]
